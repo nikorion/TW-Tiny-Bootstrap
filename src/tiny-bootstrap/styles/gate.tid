@@ -1,0 +1,32 @@
+title: $:/plugins/nikorion/tiny-bootstrap/styles/gate
+tags: $:/tags/Stylesheet
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+\function tiny-bootstrap-shiraz-active() [[$:/plugins/kookma/shiraz]!is[missing]] :filter[lookup:no[$:/config/Plugins/Disabled/]match[no]]
+<%if [<tiny-bootstrap-shiraz-active>is[blank]] %>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/root" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/sizing" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/spacing" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/border" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/rounded" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/shadow" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/float" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/clearfix" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/text-position" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/text-effect" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/text-wrap-truncate" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/text-heading" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/text-color" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/background-color" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/text-bg-color" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/alert" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/badge" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/breadcrumb" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/button" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/card" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/card-group" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/image" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/progress" $field="text" $mode="block"/>
+<$transclude $tiddler="$:/plugins/nikorion/tiny-bootstrap/styles/rulers" $field="text" $mode="block"/>
+<%endif%>

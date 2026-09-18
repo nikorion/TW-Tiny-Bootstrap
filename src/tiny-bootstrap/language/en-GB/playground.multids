@@ -1,0 +1,8 @@
+title: $:/plugins/nikorion/tiny-bootstrap/language/en-GB/Playground/
+type: text/vnd.tiddlywiki
+
+Title: ! Sizing / spacing / shadow / rounded
+Colours: ! Colours
+Alerts: ! Alerts
+BadgesButtons: ! Badges / buttons
+ShirazNote: If [[Shiraz|https://github.com/kookma/TW-Shiraz]] is installed and enabled in this wiki, everything above still looks the same — but it's rendered by //Shiraz's own// CSS, not Tiny Bootstrap's (which self-disabled). Remove or disable Shiraz to see Tiny Bootstrap take over.

@@ -1,0 +1,27 @@
+{
+    "description": "TW-Tiny-Bootstrap development wiki",
+    "plugins": [
+        "tiddlywiki/filesystem",
+        "tiddlywiki/tiddlyweb",
+        "nikorion/tiny-bootstrap"
+    ],
+    "themes": [
+        "tiddlywiki/snowwhite",
+        "tiddlywiki/vanilla"
+    ],
+    "pluginPath": "../src",
+    "config": {
+      "retain-original-tiddler-path": true
+    },
+    "build": {
+        "plugin-json": [
+            "--output", "dist",
+            "--render", "$:/core/templates/exporters/JsonFile", "TW-Tiny-Bootstrap-Plugin.json", "text/plain", "", "exportFilter", "[[$:/plugins/nikorion/tiny-bootstrap]]"
+        ],
+        "html": [
+            "--output", "docs",
+            "--rendertiddler", "$:/core/save/all", "TW-Tiny-Bootstrap-Wiki.html", "text/plain", "",
+            "publishFilter", "-[[$:/dev/hmr]] -[[$:/config/dev/hmr-port]] -[[$:/config/SyncFilter]] -[[$:/config/FileSystemPaths]] -[[$:/config/OriginalTiddlerPaths]]"
+        ]
+    }
+}

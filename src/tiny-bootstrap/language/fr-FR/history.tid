@@ -1,0 +1,4 @@
+title: $:/plugins/nikorion/tiny-bootstrap/language/fr-FR/history
+type: text/vnd.tiddlywiki
+
+* ''0.1.0'' -- 2026.09.17 -- Bonjour ! CSS utilitaire/composants Bootstrap extrait du dossier `styles/bs/` de [[Shiraz|https://github.com/kookma/TW-Shiraz]] sous forme de plugin indépendant, entièrement localisé (en-GB, fr-FR). Se désactive automatiquement si Shiraz est installé et actif.

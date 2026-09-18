@@ -1,0 +1,37 @@
+title: $:/plugins/nikorion/tiny-bootstrap/language/en-GB/readme
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+A standalone subset of [[Bootstrap 5.3.3|https://getbootstrap.com/]]'s utility and component CSS classes, extracted from [[Shiraz|https://github.com/kookma/TW-Shiraz]]'s `styles/bs/` folder (Shiraz repackages them from the official Bootstrap CSS). No JavaScript, no Bootstrap components that need it (dropdowns, modals, tooltips…) — pure `class="..."` styling, usable on any element (tables, `<div>`, headings…).
+
+! Usage
+
+Just add a class to any element's `class` attribute, e.g. with [[TW-Table|https://github.com/nikorion/TW-Table]]:
+
+```
+<<table filter:"[tag[Demo]]" fields:"title" class="w-100 shadow-sm rounded">>
+```
+
+! Classes
+
+|!Group |!Classes |
+|Sizing |`w-25` `w-50` `w-75` `w-100` `w-auto` `h-25` `h-50` `h-75` `h-100` `h-auto` `mw-100` `mh-100` `vw-100` `vh-100` |
+|Spacing |`m-*` `mt-*` `mb-*` `ms-*` `me-*` `mx-*` `my-*` (0–5, `auto`) · `p-*` `pt-*` `pb-*` `ps-*` `pe-*` `px-*` `py-*` (0–5) · `gap-*` `row-gap-*` `column-gap-*` (0–5) |
+|Borders |`border` `border-0`…`border-5` · `border-top/end/bottom/start[-0]` · `border-{primary,secondary,success,danger,warning,info,light,dark,black,white}[-subtle]` · `border-opacity-{10,25,50,75,100}` |
+|Rounded corners |`rounded` `rounded-0`…`rounded-5` · `rounded-{top,bottom,start,end}[-N]` · `rounded-circle` `rounded-pill` |
+|Text / background colour |`text-{primary,secondary,success,danger,warning,info,light,dark,body,muted,black,white,black-50,white-50}[-emphasis]` · `bg-{...}[-subtle]` `bg-gradient` `bg-transparent` · `text-bg-{primary,secondary,success,danger,warning,info,light,dark}` |
+|Text alignment / effects |`text-start` `text-center` `text-end` · `text-nowrap` `text-truncate` `text-wrap` · `text-uppercase` `text-lowercase` `text-capitalize` · `text-decoration-{underline,line-through,none}` |
+|Shadows / float |`shadow-sm` `shadow` `shadow-lg` `shadow-none` · `float-start` `float-end` `float-none` · `clearfix` |
+|Headings |`display-1`…`display-6`, `h1`/`h2`/`h3`/`h6`, `lead` |
+|Components |`alert` `alert-{primary,secondary,success,danger,warning,info,light,dark}` `alert-dismissible` `alert-heading` `alert-link` · `badge` · `breadcrumb` `breadcrumb-item` · `btn` `btn-{primary,secondary,success,danger,warning,info,light,dark,link}` `btn-outline-*` `btn-sm` `btn-lg` `btn-check` · `card` `card-{header,body,footer,title,subtitle,text,link,img,img-top,img-bottom,img-overlay,header-tabs,header-pills}` `card-group` · `figure` `figure-img` `figure-caption` `img-fluid` `img-thumbnail` · `progress` `progress-bar` `progress-bar-striped` `progress-bar-animated` `progress-stacked` · `vr` |
+
+Full reference: [[Bootstrap 5.3 utility docs|https://getbootstrap.com/docs/5.3/utilities/]].
+
+! Compatibility
+
+''Self-disables when Shiraz is installed and enabled'': Shiraz already ships the exact same classes (`styles/bs/`), so loading both would just duplicate the CSS for no benefit. Tiny Bootstrap checks for `$:/plugins/kookma/shiraz` at render time — if present (and not disabled from the control panel), its own stylesheet renders empty. No manual toggle needed: install or remove Shiraz and Tiny Bootstrap reacts automatically.
+
+! Requirements
+
+TiddlyWiki >= 5.3.5.

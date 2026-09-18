@@ -1,0 +1,37 @@
+title: $:/plugins/nikorion/tiny-bootstrap/language/fr-FR/readme
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+Un sous-ensemble autonome des classes CSS utilitaires et composants de [[Bootstrap 5.3.3|https://getbootstrap.com/]], extrait du dossier `styles/bs/` de [[Shiraz|https://github.com/kookma/TW-Shiraz]] (Shiraz les reconditionne depuis le CSS officiel de Bootstrap). Aucun JavaScript, aucun composant Bootstrap qui en aurait besoin (menus déroulants, fenêtres modales, infobulles…) — uniquement du style via `class="..."`, utilisable sur n'importe quel élément (tableaux, `<div>`, titres…).
+
+! Usage
+
+Ajoute simplement une classe à l'attribut `class` de n'importe quel élément, par exemple avec [[TW-Table|https://github.com/nikorion/TW-Table]] :
+
+```
+<<table filter:"[tag[Demo]]" fields:"title" class="w-100 shadow-sm rounded">>
+```
+
+! Classes
+
+|!Groupe |!Classes |
+|Dimensions |`w-25` `w-50` `w-75` `w-100` `w-auto` `h-25` `h-50` `h-75` `h-100` `h-auto` `mw-100` `mh-100` `vw-100` `vh-100` |
+|Marges / espacement |`m-*` `mt-*` `mb-*` `ms-*` `me-*` `mx-*` `my-*` (0–5, `auto`) · `p-*` `pt-*` `pb-*` `ps-*` `pe-*` `px-*` `py-*` (0–5) · `gap-*` `row-gap-*` `column-gap-*` (0–5) |
+|Bordures |`border` `border-0`…`border-5` · `border-top/end/bottom/start[-0]` · `border-{primary,secondary,success,danger,warning,info,light,dark,black,white}[-subtle]` · `border-opacity-{10,25,50,75,100}` |
+|Coins arrondis |`rounded` `rounded-0`…`rounded-5` · `rounded-{top,bottom,start,end}[-N]` · `rounded-circle` `rounded-pill` |
+|Couleurs texte / fond |`text-{primary,secondary,success,danger,warning,info,light,dark,body,muted,black,white,black-50,white-50}[-emphasis]` · `bg-{...}[-subtle]` `bg-gradient` `bg-transparent` · `text-bg-{primary,secondary,success,danger,warning,info,light,dark}` |
+|Alignement / effets de texte |`text-start` `text-center` `text-end` · `text-nowrap` `text-truncate` `text-wrap` · `text-uppercase` `text-lowercase` `text-capitalize` · `text-decoration-{underline,line-through,none}` |
+|Ombres / flottement |`shadow-sm` `shadow` `shadow-lg` `shadow-none` · `float-start` `float-end` `float-none` · `clearfix` |
+|Titres |`display-1`…`display-6`, `h1`/`h2`/`h3`/`h6`, `lead` |
+|Composants |`alert` `alert-{primary,secondary,success,danger,warning,info,light,dark}` `alert-dismissible` `alert-heading` `alert-link` · `badge` · `breadcrumb` `breadcrumb-item` · `btn` `btn-{primary,secondary,success,danger,warning,info,light,dark,link}` `btn-outline-*` `btn-sm` `btn-lg` `btn-check` · `card` `card-{header,body,footer,title,subtitle,text,link,img,img-top,img-bottom,img-overlay,header-tabs,header-pills}` `card-group` · `figure` `figure-img` `figure-caption` `img-fluid` `img-thumbnail` · `progress` `progress-bar` `progress-bar-striped` `progress-bar-animated` `progress-stacked` · `vr` |
+
+Référence complète : [[documentation des utilitaires Bootstrap 5.3|https://getbootstrap.com/docs/5.3/utilities/]].
+
+! Compatibilité
+
+''Se désactive automatiquement si Shiraz est installé'' : Shiraz fournit déjà exactement les mêmes classes (`styles/bs/`), charger les deux dupliquerait le CSS sans aucun bénéfice. Tiny Bootstrap vérifie la présence de `$:/plugins/kookma/shiraz` au rendu — s'il est présent (et non désactivé depuis le panneau de configuration), sa propre feuille de style se rend vide. Aucun bascule manuel nécessaire : installer ou retirer Shiraz suffit, la réaction est automatique.
+
+! Prérequis
+
+TiddlyWiki >= 5.3.5.
