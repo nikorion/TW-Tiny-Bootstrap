@@ -3,11 +3,15 @@
     "plugins": [
         "tiddlywiki/filesystem",
         "tiddlywiki/tiddlyweb",
-        "nikorion/tiny-bootstrap"
+        "nikorion/tiny-bootstrap",
+        "nikorion/detect-language"
     ],
     "themes": [
         "tiddlywiki/snowwhite",
         "tiddlywiki/vanilla"
+    ],
+    "languages": [
+        "fr-FR"
     ],
     "pluginPath": "../src",
     "config": {
