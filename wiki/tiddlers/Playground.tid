@@ -1,22 +1,22 @@
 title: Playground
 
-<<tiny-bootstrap-lingo Playground/Title>>
+<<detect-language-lingo "Playground/Title" mode="block">>
 
 <div class="w-50 p-3 shadow rounded" style="background:#eee;">w-50 p-3 shadow rounded</div>
 
-<<tiny-bootstrap-lingo Playground/Colours>>
+<<detect-language-lingo "Playground/Colours" mode="block">>
 
 <div class="text-bg-primary p-2 mt-2">text-bg-primary</div>
 <div class="text-bg-success p-2 mt-2">text-bg-success</div>
 <div class="text-bg-danger p-2 mt-2">text-bg-danger</div>
 
-<<tiny-bootstrap-lingo Playground/Alerts>>
+<<detect-language-lingo "Playground/Alerts" mode="block">>
 
 <div class="alert alert-warning mt-2">alert alert-warning</div>
 
-<<tiny-bootstrap-lingo Playground/BadgesButtons>>
+<<detect-language-lingo "Playground/BadgesButtons" mode="block">>
 
 <span class="badge text-bg-info">badge</span>
 <button class="btn btn-primary btn-sm">btn btn-primary</button>
 
-<<tiny-bootstrap-lingo Playground/ShirazNote>>
+<<detect-language-lingo Playground/ShirazNote>>
