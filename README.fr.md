@@ -7,38 +7,15 @@
 
 Un plugin TiddlyWiki qui regroupe les classes CSS utilitaires et de composants de Bootstrap 5.3.3 — sans JavaScript, du style pur par `class="..."`. Il se désactive de lui-même quand [Shiraz](https://github.com/kookma/TW-Shiraz) est installé et activé, Shiraz fournissant déjà les mêmes classes.
 
----
-
-## Sommaire
-
-- [Présentation](#présentation)
-- [Installation](#installation)
-- [Développement](#développement)
-- [Fichiers](#fichiers)
-- [Historique des versions](#historique-des-versions)
-  - [v0.1.0](#v010)
-- [Crédits](#crédits)
-- [Licence](#licence)
-
----
-
 ## Présentation
 
 Extrait du dossier `styles/bs/` de Shiraz (24 feuilles de style : dimensions, espacements, bordures, coins arrondis, couleurs, ombres, alertes, badges, boutons, cartes, etc.). Utilisable sur n'importe quel élément — tableaux, `<div>`, titres —, pas seulement sur les widgets de Shiraz.
-
-[↑](#sommaire "Retour au sommaire")
-
----
 
 ## Installation
 
 1. Télécharger `TW-Tiny-Bootstrap-Plugin.json` depuis la [dernière version](https://github.com/nikorion/TW-Tiny-Bootstrap/releases/latest)
 2. Le glisser-déposer dans votre TiddlyWiki (≥ 5.3.5)
 3. Enregistrer et recharger
-
-[↑](#sommaire "Retour au sommaire")
-
----
 
 ## Développement
 
@@ -50,10 +27,6 @@ pnpm build    # génère dist/TW-Tiny-Bootstrap-Plugin.json + docs/TW-Tiny-Boots
 
 Les sources sont dans `src/tiny-bootstrap/`.
 
-[↑](#sommaire "Retour au sommaire")
-
----
-
 ## Fichiers
 
 | Fichier | Rôle |
@@ -62,30 +35,16 @@ Les sources sont dans `src/tiny-bootstrap/`.
 | `src/tiny-bootstrap/styles/gate.tid` | Verrou d'auto-désactivation (détecte Shiraz), seul tiddler tagué `$:/tags/Stylesheet` |
 | `src/tiny-bootstrap/styles/*.css` | Les 24 feuilles de style Bootstrap (non taguées, transcluses par `gate.tid`) |
 
-[↑](#sommaire "Retour au sommaire")
-
----
-
 ## Historique des versions
 
 ### v0.1.0
 
 Première version — CSS utilitaire/composants de Bootstrap extrait de Shiraz dans un plugin à part, qui se désactive de lui-même.
 
-[↑](#sommaire "Retour au sommaire")
-
----
-
 ## Crédits
 
 Développé avec l'aide d'Anthropic Claude pour le code, la revue et la documentation.
 
-[↑](#sommaire "Retour au sommaire")
-
----
-
 ## Licence
 
 Licence MIT — voir `LICENSE`. Embarque un sous-ensemble de Bootstrap 5.3.3 (MIT), reconditionné via Shiraz (MIT).
-
-[↑](#sommaire "Retour au sommaire")
