@@ -9,9 +9,24 @@ A TiddlyWiki plugin bundling Bootstrap 5.3.3's utility and component CSS classes
 
 ---
 
+## Contents
+
+- [Overview](#overview)
+- [Installation](#installation)
+- [Development](#development)
+- [Files](#files)
+- [Version history](#version-history)
+  - [v0.1.0](#v010)
+- [Credits](#credits)
+- [License](#license)
+
+---
+
 ## Overview
 
 Extracted from Shiraz's `styles/bs/` folder (24 stylesheets: sizing, spacing, borders, rounded corners, colours, shadows, alerts, badges, buttons, cards, etc.). Usable on any element — tables, `<div>`, headings — not just Shiraz's own widgets.
+
+[↑ Back to contents](#contents)
 
 ---
 
@@ -20,6 +35,8 @@ Extracted from Shiraz's `styles/bs/` folder (24 stylesheets: sizing, spacing, bo
 1. Download `TW-Tiny-Bootstrap-Plugin.json` from the [latest release](https://github.com/nikorion/TW-Tiny-Bootstrap/releases/latest)
 2. Drag and drop it into your TiddlyWiki (≥ 5.3.5)
 3. Save and reload
+
+[↑ Back to contents](#contents)
 
 ---
 
@@ -33,6 +50,8 @@ pnpm build    # generates dist/TW-Tiny-Bootstrap-Plugin.json + docs/TW-Tiny-Boot
 
 Sources are in `src/tiny-bootstrap/`.
 
+[↑ Back to contents](#contents)
+
 ---
 
 ## Files
@@ -43,6 +62,8 @@ Sources are in `src/tiny-bootstrap/`.
 | `src/tiny-bootstrap/styles/gate.tid` | Self-disable gate (checks for Shiraz), only tiddler tagged `$:/tags/Stylesheet` |
 | `src/tiny-bootstrap/styles/*.css` | The 24 Bootstrap stylesheets (untagged, transcluded by `gate.tid`) |
 
+[↑ Back to contents](#contents)
+
 ---
 
 ## Version history
@@ -51,14 +72,20 @@ Sources are in `src/tiny-bootstrap/`.
 
 Initial release — Bootstrap utility/component CSS extracted from Shiraz into its own, self-disabling plugin.
 
+[↑ Back to contents](#contents)
+
 ---
 
 ## Credits
 
 Developed with assistance from Anthropic Claude for code, review, and documentation.
 
+[↑ Back to contents](#contents)
+
 ---
 
 ## License
 
 MIT License — see `LICENSE`. Bundles a subset of Bootstrap 5.3.3 (MIT), repackaged via Shiraz (MIT).
+
+[↑ Back to contents](#contents)
