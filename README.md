@@ -13,16 +13,23 @@ Extracted from Shiraz's `styles/bs/` folder (24 stylesheets: sizing, spacing, bo
 
 ## Installation
 
-1. Download `TW-Tiny-Bootstrap-Plugin.json` from the [latest release](https://github.com/nikorion/TW-Tiny-Bootstrap/releases/latest)
-2. Drag and drop it into your TiddlyWiki (≥ 5.3.5)
-3. Save and reload
+**Live demo**: [https://nikorion.github.io/TW-Tiny-Bootstrap/](https://nikorion.github.io/TW-Tiny-Bootstrap/) — try the plugin before installing it.
+
+**From the nikorion plugin library** (TiddlyWiki then offers each new version as an update):
+
+1. In your wiki, create a tiddler tagged `$:/tags/PluginLibrary`, with a field `url` set to `https://nikorion.github.io/tw-dev/library/index.html` and a `caption` such as `nikorion`.
+2. Open *Control Panel → Plugins → Get more plugins*, choose the nikorion library and install **Tiny Bootstrap**.
+
+**By hand**: download [`TW-Tiny-Bootstrap-Plugin.json`](https://nikorion.github.io/TW-Tiny-Bootstrap/TW-Tiny-Bootstrap-Plugin.json) and drag it onto your wiki.
+
+Requires TiddlyWiki ≥ 5.3.5.
 
 ## Development
 
 ```
 pnpm install
 pnpm dev      # dev wiki + hot reload; the URL (random free port) is printed on start
-pnpm build    # generates dist/TW-Tiny-Bootstrap-Plugin.json + docs/TW-Tiny-Bootstrap-Wiki.html
+pnpm build    # dist/TW-Tiny-Bootstrap-Plugin.json + docs/ (demo wiki, published by CI)
 ```
 
 Sources are in `src/tiny-bootstrap/`.

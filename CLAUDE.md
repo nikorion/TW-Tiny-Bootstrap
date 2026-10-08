@@ -34,11 +34,11 @@ src/tiny-bootstrap/
 
 wiki/                      ← wiki TW de dev : Playground.tid (i18n) démontrant chaque groupe de classes + note Shiraz
 dist/                      ← généré par pnpm build, gitignored
-docs/                      ← TW-Tiny-Bootstrap-Wiki.html standalone (distribution)
+docs/                      ← démo générée par `pnpm build` (`index.html` + moteur externe), gitignorée, publiée par la CI
 ```
 
 ## Spécificités dev
 - Aucun module JS → pas de `pnpm lint`.
 - HMR : tout est `.css`/`.tid`/`.multids`, poussé à chaud. Un changement de `plugin.info` reboote (nodemon).
-- `pnpm build` → `dist/TW-Tiny-Bootstrap-Plugin.json` + `docs/TW-Tiny-Bootstrap-Wiki.html`.
+- `pnpm build` → `dist/TW-Tiny-Bootstrap-Plugin.json` + démo `docs/` (publiée par la CI : `../guides/publication.md`).
 - Pour tester l'auto-désactivation en dev : installer Shiraz dans `wiki/tiddlywiki.info` (`plugins`) ou glisser son `.json` dans le wiki de dev, recharger, vérifier que le Playground garde le même rendu (classes fournies par Shiraz) puis le retirer pour voir Tiny Bootstrap reprendre la main.
