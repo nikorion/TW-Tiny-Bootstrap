@@ -1,5 +1,0 @@
-{
-  "watch": ["src/tiny-bootstrap/plugin.info"],
-  "ext": "info",
-  "exec": "tiddlywiki wiki --listen port=8080"
-}

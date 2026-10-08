@@ -38,7 +38,7 @@ docs/                      ← TW-Tiny-Bootstrap-Wiki.html standalone (distribut
 ```
 
 ## Spécificités dev
-- Aucun module JS → pas de `pnpm lint`, `nodemon.json` ne surveille que `plugin.info`.
+- Aucun module JS → pas de `pnpm lint`.
 - HMR : tout est `.css`/`.tid`/`.multids`, poussé à chaud. Un changement de `plugin.info` reboote (nodemon).
 - `pnpm build` → `dist/TW-Tiny-Bootstrap-Plugin.json` + `docs/TW-Tiny-Bootstrap-Wiki.html`.
 - Pour tester l'auto-désactivation en dev : installer Shiraz dans `wiki/tiddlywiki.info` (`plugins`) ou glisser son `.json` dans le wiki de dev, recharger, vérifier que le Playground garde le même rendu (classes fournies par Shiraz) puis le retirer pour voir Tiny Bootstrap reprendre la main.
