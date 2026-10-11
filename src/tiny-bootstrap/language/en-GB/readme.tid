@@ -1,8 +1,6 @@
 title: $:/plugins/nikorion/tiny-bootstrap/language/en-GB/readme
 type: text/vnd.tiddlywiki
 
-\whitespace trim
-
 A standalone subset of [[Bootstrap 5.3.3|https://getbootstrap.com/]]'s utility and component CSS classes, extracted from [[Shiraz|https://github.com/kookma/TW-Shiraz]]'s `styles/bs/` folder (Shiraz repackages them from the official Bootstrap CSS). No JavaScript, no Bootstrap components that need it (dropdowns, modals, tooltips…) — pure `class="..."` styling, usable on any element (tables, `<div>`, headings…).
 
 ! Usage

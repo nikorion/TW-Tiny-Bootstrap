@@ -1,8 +1,6 @@
 title: $:/plugins/nikorion/tiny-bootstrap/language/fr-FR/readme
 type: text/vnd.tiddlywiki
 
-\whitespace trim
-
 Un sous-ensemble autonome des classes CSS utilitaires et composants de [[Bootstrap 5.3.3|https://getbootstrap.com/]], extrait du dossier `styles/bs/` de [[Shiraz|https://github.com/kookma/TW-Shiraz]] (Shiraz les reconditionne depuis le CSS officiel de Bootstrap). Aucun JavaScript, aucun composant Bootstrap qui en aurait besoin (menus déroulants, fenêtres modales, infobulles…) — uniquement du style via `class="..."`, utilisable sur n'importe quel élément (tableaux, `<div>`, titres…).
 
 ! Usage
