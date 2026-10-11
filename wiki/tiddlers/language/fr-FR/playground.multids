@@ -4,4 +4,4 @@ Title: ! Dimensions / espacement / ombre / arrondi
 Colours: ! Couleurs
 Alerts: ! Alertes
 BadgesButtons: ! Badges / boutons
-ShirazNote: Si [[Shiraz|https://github.com/kookma/TW-Shiraz]] est installé et actif dans ce wiki, tout ce qui précède garde le même rendu — mais c'est le CSS //propre à Shiraz// qui s'applique, pas celui de Tiny Bootstrap (qui s'est désactivé). Retire ou désactive Shiraz pour voir Tiny Bootstrap prendre le relais.
+ShirazNote: Si [[Shiraz|https://github.com/kookma/TW-Shiraz]] est installé et actif dans ce wiki, tout ce qui précède garde le même rendu — mais c'est le CSS //propre à Shiraz// qui s'applique, pas celui de Tiny Bootstrap (qui s'est désactivé). Retirez ou désactivez Shiraz pour voir Tiny Bootstrap prendre le relais.

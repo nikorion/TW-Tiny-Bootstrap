@@ -7,7 +7,7 @@ Un sous-ensemble autonome des classes CSS utilitaires et composants de [[Bootstr
 
 ! Usage
 
-Ajoute simplement une classe à l'attribut `class` de n'importe quel élément, par exemple avec [[TW-Table|https://github.com/nikorion/TW-Table]] :
+Ajoutez simplement une classe à l'attribut `class` de n'importe quel élément, par exemple avec [[TW-Table|https://github.com/nikorion/TW-Table]] :
 
 ```
 <<table filter:"[tag[Demo]]" fields:"title" class="w-100 shadow-sm rounded">>
