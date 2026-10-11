@@ -1,7 +1,8 @@
 created: 20261010181909292
 creator: nikorion
-modified: 20261010181909292
+modified: 20261011173458000
 modifier: nikorion
 title: $:/DefaultTiddlers
 
-[[Playground]]
+$:/plugins/nikorion/tiny-bootstrap
+[[Playground]is[tiddler]]
