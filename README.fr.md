@@ -46,7 +46,7 @@ Les sources sont dans `src/tiny-bootstrap/`.
 
 ## Historique des versions
 
-**v0.1.0**
+**v0.1.0 (2026-09-17)**
 
 Première version — CSS utilitaire/composants de Bootstrap extrait de Shiraz dans un plugin à part, qui se désactive de lui-même.
 
